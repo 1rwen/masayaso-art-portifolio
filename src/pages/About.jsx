@@ -18,7 +18,7 @@ function about() {
             alt="about-description"
           >
             <span className="underline"> about </span> <br></br>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Id odio eros,
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Id odio ero,
             facilisi habitant varius feugiat velit ac. Dictum odio imperdiet
             pellentesque tincidunt dictumst cras. Viverra risus pretium
             habitasse netus nunc ex. Feugiat euismod elit nam rhoncus vestibulum
