@@ -14,7 +14,7 @@ function about() {
         </div>
         <div className="w-[50%]">
           <div
-            className="fixed w-[55%] pr-[150px] text-xs mt-[300px] text-blueGray"
+            className="fixed w-[55%] pr-[150px] text-xs mt-[300px]  text-blueGray"
             alt="about-description"
           >
             <span className="underline"> about </span> <br></br>

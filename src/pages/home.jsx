@@ -5,7 +5,7 @@ import MaieBar from "../components/maiebar";
 function Home() {
   return (
     <div
-      className="flex justify-center items-start mt-[300px] "
+      className="flex justify-center items-start mt-[300px]"
       alt="container-main"
     >
       <div className="flex flex-row h-auto justify-center w-[1600px] space-x-3">
