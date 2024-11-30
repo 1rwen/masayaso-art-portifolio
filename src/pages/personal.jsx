@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MaieBar from "../components/maiebar";
 import Modal from "../components/modal";
 import row1a from "../assets/personal/row-1-1.jpg";
@@ -28,6 +28,10 @@ function personal() {
     setIsModalOpen(false);
     setSelectedPhoto(null);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex justify-center mt-[175px] mb-[175px] w-full">

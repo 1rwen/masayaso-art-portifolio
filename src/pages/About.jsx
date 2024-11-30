@@ -1,11 +1,18 @@
 import photo1 from "../assets/about/photo-1-about.jpg";
 import photo2 from "../assets/about/photo-2-about.jpg";
+import { useEffect } from 'react';
+
+
 
 function about() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
       <div
-        className="flex justify-center items-start mt-[10px] gap-2 space-x-4"
+        className="flex justify-center items-start gap-2 space-x-4"
         alt="container-main"
       >
         <div className="w-[50%] space-y-3" alt="photos-about">
