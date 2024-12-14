@@ -1,14 +1,12 @@
 import photo1 from "../assets/about/photo-1-about.jpg";
 import photo2 from "../assets/about/photo-2-about.jpg";
-import { useEffect } from 'react';
-
-
+import { useEffect } from "react";
 
 function about() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div>
       <div
@@ -35,9 +33,6 @@ function about() {
             Curabitur magnis potenti tortor consectetur sociosqu dictumst sem
             aliquet.
           </div>
-          {/* <div className="fixed flex text-xs flex-col justify-center items-center">
-                    <div className="mt-[60px]">home</div>
-                </div> */}
         </div>
       </div>
     </div>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import MaieBar from "../components/maiebar";
 import Modal from "../components/modal";
+import row0a from "../assets/personal/row-0-1.jpg";
+import row0b from "../assets/personal/row-0-2.jpg";
 import row1a from "../assets/personal/row-1-1.jpg";
 import row1b from "../assets/personal/row-1-2.jpg";
 import row2a from "../assets/personal/row-2-1.jpg";
@@ -34,11 +36,35 @@ function personal() {
   }, []);
 
   return (
-    <div className="flex justify-center mt-[175px] mb-[175px] w-full">
+    <div className="flex flex-col md:flex-row justify-center items-center mt-[60px] md:mt-[175px] mb-[175px] w-full">
       <div
-        className="w-[800px] flex flex-col gap-y-1 mr-[40px]"
+        className="md:order-2 mb-[30px] md:fixed md:top-[19%] top-[10%] left-[30%] md:left-[71%] w-[130px] md:w-[160px]"
+        alt="maie-bar"
+      >
+        <MaieBar className="items-start" />
+      </div>
+      <div
+        className="w-[320px] md:w-[800px] flex flex-col justify-center items-center gap-y-1 md:mr-[40px]"
         alt="container-personal"
       >
+        <div className="flex flex-row gap-1" alt="row0">
+          <div>
+            <img
+              src={row0a}
+              alt=""
+              onClick={() => openModal(row0a)}
+              className="cursor-pointer"
+            />
+          </div>
+          <div>
+            <img
+              src={row0b}
+              alt=""
+              onClick={() => openModal(row0b)}
+              className="cursor-pointer"
+            />
+          </div>
+        </div>
         <div className="flex flex-row gap-1" alt="row1">
           <div>
             <img
@@ -154,12 +180,6 @@ function personal() {
               onClick={() => openModal(row7b)}
             />
           </div>
-        </div>
-      </div>
-
-      <div>
-        <div className="fixed">
-          <MaieBar className="items-start" />
         </div>
       </div>
 

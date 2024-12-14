@@ -1,10 +1,15 @@
 import Navbar from "./components/Navbar";
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Personal from "./pages/personal";
 import Commissions from "./pages/commissions";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
 
 // PageWrapper Component
 const PageWrapper = ({ children }) => (
@@ -12,14 +17,14 @@ const PageWrapper = ({ children }) => (
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    transition={{ 
-      duration: 0.3,  // Slightly shorter duration for smoother transition
-      ease: "easeInOut"  // Smooth easing function
+    transition={{
+      duration: 0.3, // Slightly shorter duration for smoother transition
+      ease: "easeInOut", // Smooth easing function
     }}
-    style={{ 
-        // Important for preventing layout shifts
-      width: '100%',
-      height: '100%'
+    style={{
+      // Important for preventing layout shifts
+      width: "100%",
+      height: "100%",
     }}
   >
     {children}
@@ -49,10 +54,38 @@ function PageTransitionWrapper() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-        <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
-        <Route path="/commissions" element={<PageWrapper><Commissions /></PageWrapper>} />
-        <Route path="/personal" element={<PageWrapper><Personal /></PageWrapper>} />
+        <Route
+          path="/"
+          element={
+            <PageWrapper>
+              <Home />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <PageWrapper>
+              <About />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/commissions"
+          element={
+            <PageWrapper>
+              <Commissions />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/personal"
+          element={
+            <PageWrapper>
+              <Personal />
+            </PageWrapper>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );
