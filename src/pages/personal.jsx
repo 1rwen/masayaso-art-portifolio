@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MaieBar from "../components/maiebar";
+import MaieBar1 from "../components/maiebar-home";
 import Modal from "../components/modal";
 import row0a from "../assets/personal/row-0-1.jpg";
 import row0b from "../assets/personal/row-0-2.jpg";
@@ -36,15 +37,15 @@ function personal() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center mt-[60px] md:mt-[175px] mb-[175px] w-full">
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start mt-[60px] lg:ml-[40px] xl:ml-0 lg:mt-[125px] mb-[175px] w-full lg:gap-x-4">
       <div
-        className="md:order-2 mb-[30px] md:fixed md:top-[19%] top-[10%] left-[30%] md:left-[71%] w-[130px] md:w-[160px]"
+        className="lg:order-2 mb-[30px] lg:top-[19%] top-[10%] left-[30%] lg:left-[1350px] w-[130px] lg:w-[160px]"
         alt="maie-bar"
       >
-        <MaieBar className="items-start" />
+        <MaieBar className="items-start"/>
       </div>
       <div
-        className="w-[320px] md:w-[800px] flex flex-col justify-center items-center gap-y-1 md:mr-[40px]"
+        className="w-[320px] md:w-[520px] lg:w-[700px] flex flex-col justify-center items-center gap-y-1"
         alt="container-personal"
       >
         <div className="flex flex-row gap-1" alt="row0">

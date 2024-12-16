@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function maiebar() {
   return (
     <div
-      className="flex flex-col w-full md:w-[160px] justify-center items-center md:items-start pl-5"
+      className="flex flex-col w-full md:w-[180px] justify-center items-center md:items-start pl-5"
       alt="navbar"
     >
       <div>
@@ -15,7 +15,7 @@ function maiebar() {
         />
       </div>
 
-      <div className="hidden md:flex md:flex-col text-sm space-x-4 md:space-x-0 md:space-y-2.5 text-blueGray ">
+      <div className="hidden lg:flex lg:flex-col text-xs space-y-2.5 text-blueGray">
         <div>
           <Link to="/" className="hover:underline">
             home

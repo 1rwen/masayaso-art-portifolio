@@ -25,7 +25,7 @@ function Modal({ isOpen, onClose, imageSrc }) {
               <img
                 src={imageSrc}
                 alt="Enlarged"
-                className="w-full max-h-[65vh] max-w-[320px] md:max-h-[85vh] md:max-w-[120vh] object-contain"
+                className="w-full max-h-[65vh] max-w-[320px] lg:max-h-[85vh] lg:max-w-[120vh] object-contain"
               />
             )}
           </motion.div>

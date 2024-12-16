@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 function maiebar() {
   return (
     <div
-      className="flex flex-col w-[140px] md:w-[160px] items-center md:items-start pl-5 bg-babyBlue "
+      className="flex flex-col w-[120px] md:w-[160px] items-center justify-center lg:pl-5"
       alt="navbar"
     >
-      <div>
+      <div className="w-[100px] md:w-[160px] lg:w-[180px]">
         <img src={maieLogo} alt="maie-name" />
       </div>
 
-      <div className="hidden md:flex md:flex-col text-sm space-x-4 md:space-x-0 md:space-y-2.5 text-blueGray ">
+      <div
+        className="hidden xl:block flex lg:flex-col justify-center items-center text-xs space-x-3.5 lg:space-x-0 lg:space-y-2.5 text-blueGray mt-[10%]"
+        alt="options"
+      >
         <div>
           <Link to="/" className="hover:underline">
             home

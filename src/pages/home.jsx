@@ -1,48 +1,64 @@
 import personalPreview from "../assets/personal-home.jpg";
+import personalPreviewSmall from "../assets/home/personal-option.jpg";
 import personalPreviewHover from "../assets/personal-home-hover.jpg";
 import commsPreview from "../assets/comms-home.jpg";
 import commsPreviewHover from "../assets/comms-home-hover.jpg";
-import MaieBar from "../components/maiebar";
+import commsPreviewSmall from "../assets/home/comms-option.jpg";
+import aboutPreviewSmall from "../assets/home/about-option.jpg";
+import MaieBar from "../components/maiebar-home";
+import MaieBar1 from "../components/maiebar";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div
-      className="flex justify-center items-start mt-[300px]"
-      alt="container-main"
-    >
-      <div className="flex flex-row h-auto justify-center w-[1600px] space-x-3">
-        <div className="relative w-[10%]">
-          <Link to="/personal">
-            <img
-              src={personalPreview}
-              alt="home-personal"
-              className="cursor-pointer w-full h-auto duration-300"
-            />
-            {/* Overlay image */}
-            <img
-              src={personalPreviewHover} // Replace with your second image
-              alt="overlay"
-              className="absolute inset-0 w-full h-full object-cover opacity-0 hover:opacity-100 transition-opacity ease-in-out duration-300 transform-none"
-            />
-          </Link>
+    <div>
+      <div
+        className="min-h-screen flex flex-col xl:flex-row justify-center items-center lg:items-start lg:mt-[300px] lg:hidden"
+        alt="container-main"
+      >
+        <div
+          className="lg:order-2 w-[33%] sm:w-[35%] md:w-[99%] mb-[20px] flex justify-center items-center"
+          alt="maie-bar"
+        >
+          <MaieBar className="items-start" />
         </div>
-        <div className="relative w-[10%]" alt="comm-tb">
-          <Link to="/commissions">
-            <img
-              src={commsPreview}
-              alt="home-comm"
-              className="cursor-pointer w-full h-auto duration-300"
-            />
 
-            <img
-              src={commsPreviewHover} // Replace with your second image
-              alt="overlay"
-              className="absolute inset-0 w-full h-full object-cover opacity-0 hover:opacity-100 transition-opacity ease-in-out duration-300 transform-none"
-            />
-          </Link>
+        <div className="flex flex-wrap lg:flex-row h-auto items-center md:gap-y-5 justify-center space-y-[5%] md:space-y-[0%] md:gap-x-[3%] max-w-[1200px] w-[230px] sm:w-[300px] md:w-[700px]">
+          <div className="md:w-[47%] lg:w-[30%]">
+            <div className="underline text-xxs">personals</div>
+
+            <Link to="/personal">
+              <img src={personalPreviewSmall} alt="home-personal" />
+            </Link>
+          </div>
+
+          <div className="md:w-[47%] lg:w-[30%]">
+            <Link to="/commissions">
+              <div className="underline text-xxs">commissions</div>
+              <img src={commsPreviewSmall} alt="home-personal" />
+            </Link>
+          </div>
+          <div className="md:w-[47%] lg:w-[30%]">
+            <Link to="/about">
+              <div className="underline text-xxs">about</div>
+              <img src={aboutPreviewSmall} alt="about-personal" />
+            </Link>
+          </div>
         </div>
-        <MaieBar className="ml-[40px]" />
+      </div>
+
+      <div className="lg:flex lg:flex-row justify-center mt-[65px] xl:mt-[75px] gap-x-4 w-screen h-auto hidden">
+        <div className="w-[370px] xl:w-[430px] items-center">
+          <img 
+          src={personalPreview} 
+          alt="home-personal"
+          class />
+        </div>
+
+        <div className="w-[30px]" alt="maribar">
+          <MaieBar1 className="items-start"/>
+        </div>
+        
       </div>
     </div>
   );
