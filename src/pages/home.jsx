@@ -49,16 +49,12 @@ function Home() {
 
       <div className="lg:flex lg:flex-row justify-center mt-[65px] xl:mt-[75px] gap-x-4 w-screen h-auto hidden">
         <div className="w-[370px] xl:w-[430px] items-center">
-          <img 
-          src={personalPreview} 
-          alt="home-personal"
-          class />
+          <img src={personalPreview} alt="home-personal" class />
         </div>
 
         <div className="w-[30px]" alt="maribar">
-          <MaieBar1 className="items-start"/>
+          <MaieBar1 className="items-start" />
         </div>
-        
       </div>
     </div>
   );

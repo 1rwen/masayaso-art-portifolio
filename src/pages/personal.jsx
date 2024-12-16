@@ -42,7 +42,7 @@ function personal() {
         className="lg:order-2 mb-[30px] lg:top-[19%] top-[10%] left-[30%] lg:left-[1350px] w-[130px] lg:w-[160px]"
         alt="maie-bar"
       >
-        <MaieBar className="items-start"/>
+        <MaieBar className="items-start" />
       </div>
       <div
         className="w-[320px] md:w-[520px] lg:w-[700px] flex flex-col justify-center items-center gap-y-1"
