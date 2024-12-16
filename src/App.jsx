@@ -36,12 +36,15 @@ function App() {
   return (
     <div className="bg-babyBlue min-h-screen flex flex-col">
       <Router>
-        <div className="fixed w-full h-auto z-50">
+        {/* Fixed Navbar */}
+        <div className="fixed w-full h-[60px] z-50 bg-white">
           <Navbar />
         </div>
 
-        {/* Page transition wrapper */}
-        <PageTransitionWrapper />
+        {/* Content Wrapper with Padding */}
+        <div className="pt-[60px] flex-grow">
+          <PageTransitionWrapper />
+        </div>
       </Router>
     </div>
   );
