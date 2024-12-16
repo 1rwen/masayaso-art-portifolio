@@ -34,18 +34,22 @@ const PageWrapper = ({ children }) => (
 // Main App Component
 function App() {
   return (
-    <div className="bg-babyBlue min-h-screen flex flex-col">
-      <Router>
-        <div className="fixed top:0 w-full h-auto z-50">
-          <Navbar />
-        </div>
+    <div className="bg-babyBlue min-h-screen">
+      {/* Fixed Navbar */}
+      <div className="fixed top-0 left-0 w-full z-50 bg-white">
+        <Navbar />
+      </div>
 
-        {/* Page transition wrapper */}
-        <PageTransitionWrapper />
-      </Router>
+      {/* Content Wrapper */}
+      <div className="pt-[64px]">
+        <Router>
+          <PageTransitionWrapper />
+        </Router>
+      </div>
     </div>
   );
 }
+
 
 // PageTransitionWrapper Component
 function PageTransitionWrapper() {
