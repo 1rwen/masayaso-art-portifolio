@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         royalBlue: "#162741",
+        royalBlue_hover: "#2b446e",
         blueGray: "#485E7B",
         babyBlue: "#F3F7F9",
       },

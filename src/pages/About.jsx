@@ -1,6 +1,12 @@
 import photo1 from "../assets/about/photo-1-about.jpg";
 import photo2 from "../assets/about/photo-2-about.jpg";
 import { useEffect } from "react";
+import maieLogo from "../assets/maie-name.png";
+import { Link } from "react-router-dom";
+import { FaTwitter } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
+import { BiHomeHeart } from "react-icons/bi";
+import { div } from "framer-motion/client";
 
 function about() {
   useEffect(() => {
@@ -9,17 +15,15 @@ function about() {
 
   return (
     <div>
-      <div
-        className="flex justify-center items-start gap-2 space-x-4"
-        alt="container-main"
-      >
-        <div className="w-[50%] space-y-3" alt="photos-about">
-          <img src={photo1} alt="about-horse" />
-          <img src={photo2} alt="about-300k" />
+      <div className="flex flex-col justify-center items-center h-screen">
+        <div className="flex justify-center items-center w-[130px] lg:w-[150px] ">
+          <Link to="/">
+            <img src={maieLogo} alt="" />
+          </Link>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] mt-[30px]">
           <div
-            className="fixed w-[55%] pr-[150px] text-xs mt-[300px]  text-blueGray"
+            className="w-[100%] text-xs  text-blueGray"
             alt="about-description"
           >
             <span className="underline"> about </span> <br></br>
@@ -32,6 +36,38 @@ function about() {
             Tincidunt nascetur duis non diam himenaeos dignissim luctus.
             Curabitur magnis potenti tortor consectetur sociosqu dictumst sem
             aliquet.
+          </div>
+          <div className="mt-[30px]" alt="social-media-icons">
+            <div className="flex justify-center items-center text-3xl gap-x-5">
+              <div className="text-royalBlue">
+                <a
+                  href="https://x.com/masayaso"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-royalBlue hover:text-royalBlue_hover"
+                >
+                  <FaTwitter />
+                </a>
+              </div>
+              <div className="text-royalBlue">
+                <a
+                  href="https://bsky.app/profile/masayaso.bsky.social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-royalBlue hover:text-royalBlue_hover"
+                >
+                  <FaBluesky />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xs mt-[50px] lg:mt-[100px]">
+            <Link
+              to="/"
+              className="transition-all hover:underline ease-in-out text-blueGray"
+            >
+              home
+            </Link>
           </div>
         </div>
       </div>

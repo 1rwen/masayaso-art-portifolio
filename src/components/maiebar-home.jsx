@@ -8,7 +8,7 @@ function maiebar() {
       alt="navbar"
     >
       <div className="w-[100px] md:w-[160px] lg:w-[180px]">
-        <img src={maieLogo} alt="maie-name" />
+        <img src={maieLogo} alt="maie-bar" />
       </div>
 
       <div

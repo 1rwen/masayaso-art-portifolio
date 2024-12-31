@@ -17,6 +17,7 @@ import row5b2 from "../assets/personal/row-5-1-2(2).jpg";
 import row6 from "../assets/personal/row-6.jpg";
 import row7a from "../assets/personal/row-7-1.jpg";
 import row7b from "../assets/personal/row-7-2.jpg";
+import { Link } from "react-router-dom";
 
 function personal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,10 +40,12 @@ function personal() {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start mt-[60px] lg:ml-[40px] xl:ml-0 lg:mt-[125px] mb-[175px] w-full lg:gap-x-4">
       <div
-        className="lg:order-2 mb-[30px] lg:top-[19%] top-[10%] left-[30%] lg:left-[1350px] w-[130px] lg:w-[160px]"
+        className="lg:order-2 mb-[30px] w-[130px] lg:w-[160px]"
         alt="maie-bar"
       >
-        <MaieBar className="items-start" />
+        <Link to="/">
+          <MaieBar className="items-start" />
+        </Link>
       </div>
       <div
         className="w-[320px] md:w-[520px] lg:w-[700px] flex flex-col justify-center items-center gap-y-1"
