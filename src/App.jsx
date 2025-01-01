@@ -10,6 +10,8 @@ import About from "./pages/About";
 import Personal from "./pages/personal";
 import Commissions from "./pages/commissions";
 import { motion, AnimatePresence } from "framer-motion";
+import { Analytics } from '@vercel/analytics/react';
+
 
 // PageWrapper Component
 const PageWrapper = ({ children }) => (
@@ -42,6 +44,7 @@ function App() {
 
         {/* Page transition wrapper */}
         <PageTransitionWrapper />
+        <Analytics />
       </Router>
     </div>
   );
