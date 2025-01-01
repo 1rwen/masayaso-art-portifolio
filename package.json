@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://1rwen.github.io/masayaso-art-portifolio/",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
