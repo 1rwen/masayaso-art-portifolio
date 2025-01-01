@@ -1,7 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+// Dynamically set base depending on the environment
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/masayaso-art-portifolio/", // This matches the homepage subpath
-});
+  base: mode === "production" && process.env.DEPLOY_ENV === "github" 
+    ? "/masayaso-art-portifolio/" 
+    : "/", // Use "/" for Vercel
+}));
