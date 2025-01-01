@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "DEPLOY_ENV=github gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.12.0",
