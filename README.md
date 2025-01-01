@@ -8,11 +8,11 @@
 Art portifolio for artist [@masayaso](https://x.com/masayaso) on twitter. 
 
 ## React
-This project is built using React, a JavaScript library for building user interfaces. React is included and automatically installed when you install all project dependencies.
+This project is built using React, a JavaScript library for building user interfaces. React is included and automatically installed when all project dependencies are installed.
 
 ## Vite
 
-This project is built using [Vite](https://vite.dev/), a modern JavaScript build tool optimized for development and production. Vite is included and automatically installed when you run npm install to set up the project.
+This project is built using [Vite](https://vite.dev/), a modern JavaScript build tool optimized for development and production. Vite is included and automatically installed when all project dependencies are installed.
 ## Environment Variables
 
 The following environment variables are required and must be stored in an `.env` file:
