@@ -74,11 +74,8 @@ function about() {
               </div>
             </div>
           </div>
-          <div alt="tag" className="text-royalBlue  flex justify-center text-xs mt-[50px] lg:mt-[100px]">
+          <div alt="tag" className="text-royalBlue  flex justify-center text-xs mt-[50px] lg:mt-[50px]">
             (#veryFirstLife)
-          </div>
-          <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xs mt-[50px] lg:mt-[100px]">
-            
           </div>
         </div>
       </div>
