@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import MaieBar from "../components/maiebar";
 import MaieBar1 from "../components/maiebar-home";
 import Modal from "../components/modal";
+import row8a from "../assets/personal/row-a-1.jpg";
+import row8b from "../assets/personal/row-a-2.jpg";
 import row0a from "../assets/personal/row-0-1.jpg";
 import row0b from "../assets/personal/row-0-2.jpg";
 import row1a from "../assets/personal/row-1-1.jpg";
@@ -51,6 +53,24 @@ function personal() {
         className="w-[320px] md:w-[520px] lg:w-[700px] flex flex-col justify-center items-center gap-y-1"
         alt="container-personal"
       >
+        <div className="flex flex-row gap-1" alt="row8">
+          <div>
+            <img
+              src={row8a}
+              alt=""
+              onClick={() => openModal(row8a)}
+              className="cursor-pointer"
+            />
+          </div>
+          <div>
+            <img
+              src={row8b}
+              alt=""
+              onClick={() => openModal(row8b)}
+              className="cursor-pointer"
+            />
+          </div>
+        </div>
         <div className="flex flex-row gap-1" alt="row0">
           <div>
             <img
@@ -185,6 +205,14 @@ function personal() {
             />
           </div>
         </div>
+        <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xs mt-[50px] lg:mt-[100px]">
+            <Link
+              to="/"
+              className="transition-all hover:underline ease-in-out text-blueGray"
+            >
+              home
+            </Link>
+          </div>
       </div>
 
       <Modal

@@ -26,12 +26,7 @@ function maiebar() {
             to="/personal"
             className="transition-all hover:underline ease-in-out"
           >
-            personal
-          </Link>
-        </div>
-        <div>
-          <Link to="/commissions" className="hover:underline">
-            commissions
+            works
           </Link>
         </div>
         <div>

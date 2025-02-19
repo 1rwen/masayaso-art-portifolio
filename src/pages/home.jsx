@@ -33,13 +33,6 @@ function Home() {
               <img src={personalPreviewSmall} alt="home-personal" />
             </Link>
           </div>
-
-          <div className="md:w-[47%] lg:w-[30%]">
-            <Link to="/commissions">
-              <div className="underline text-xxs">commissions</div>
-              <img src={commsPreviewSmall} alt="home-personal" />
-            </Link>
-          </div>
           <div className="md:w-[47%] lg:w-[30%]">
             <Link to="/about">
               <div className="underline text-xxs">about</div>

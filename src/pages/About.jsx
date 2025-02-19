@@ -1,5 +1,6 @@
 import photo1 from "../assets/about/photo-1-about.jpg";
 import photo2 from "../assets/about/photo-2-about.jpg";
+import { IoHomeSharp } from "react-icons/io5";
 import { useEffect } from "react";
 import maieLogo from "../assets/maie-name.png";
 import { Link } from "react-router-dom";
@@ -39,6 +40,18 @@ function about() {
           </div>
           <div className="mt-[30px]" alt="social-media-icons">
             <div className="flex justify-center items-center text-3xl gap-x-5">
+            <div className="text-royalBlue">
+            <a
+                  href="https://x.com/masayaso"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-royalBlue hover:text-royalBlue_hover"
+                >
+                  <Link to="/">
+                   <IoHomeSharp />
+                  </Link>
+                </a>
+              </div>
               <div className="text-royalBlue">
                 <a
                   href="https://x.com/masayaso"
@@ -61,13 +74,11 @@ function about() {
               </div>
             </div>
           </div>
+          <div alt="tag" className="text-royalBlue  flex justify-center text-xs mt-[50px] lg:mt-[100px]">
+            (#veryFirstLife)
+          </div>
           <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xs mt-[50px] lg:mt-[100px]">
-            <Link
-              to="/"
-              className="transition-all hover:underline ease-in-out text-blueGray"
-            >
-              home
-            </Link>
+            
           </div>
         </div>
       </div>
