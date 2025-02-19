@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MaieBar from "../components/maiebar";
 import MaieBar1 from "../components/maiebar-home";
 import Modal from "../components/modal";
+import { IoHomeSharp } from "react-icons/io5";
 import row8a from "../assets/personal/row-a-1.jpg";
 import row8b from "../assets/personal/row-a-2.jpg";
 import row0a from "../assets/personal/row-0-1.jpg";
@@ -205,14 +206,14 @@ function personal() {
             />
           </div>
         </div>
-        <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xs mt-[50px] lg:mt-[100px]">
-            <Link
-              to="/"
-              className="transition-all hover:underline ease-in-out text-blueGray"
-            >
-              home
-            </Link>
-          </div>
+        <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xl mt-[50px] lg:mt-[100px]">
+          <Link
+            to="/"
+            className="text-royalBlue hover:text-royalBlue_hover"
+          >
+            <IoHomeSharp />
+          </Link>
+        </div>
       </div>
 
       <Modal

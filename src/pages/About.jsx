@@ -6,7 +6,6 @@ import maieLogo from "../assets/maie-name.png";
 import { Link } from "react-router-dom";
 import { FaTwitter } from "react-icons/fa";
 import { FaBluesky } from "react-icons/fa6";
-import { BiHomeHeart } from "react-icons/bi";
 import { div } from "framer-motion/client";
 
 function about() {
@@ -40,8 +39,8 @@ function about() {
           </div>
           <div className="mt-[30px]" alt="social-media-icons">
             <div className="flex justify-center items-center text-3xl gap-x-5">
-            <div className="text-royalBlue">
-            <a
+              <div className="text-royalBlue">
+                <a
                   href="https://x.com/masayaso"
                   target="_blank"
                   rel="noopener noreferrer"
