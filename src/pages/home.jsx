@@ -8,8 +8,12 @@ import aboutPreviewSmall from "../assets/home/about-option.jpg";
 import MaieBar from "../components/maiebar-home";
 import MaieBar1 from "../components/maiebar";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-function Home() {
+function Home() {  useEffect(() => {
+    window.scrollTo(0, 0); // Reset scroll to top when the component mounts
+  }, []);
+
   return (
     <div>
       <div
