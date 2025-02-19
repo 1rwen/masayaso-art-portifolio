@@ -27,15 +27,7 @@ function about() {
             alt="about-description"
           >
             <span className="underline"> about </span> <br></br>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Id odio ero,
-            facilisi habitant varius feugiat velit ac. Dictum odio imperdiet
-            pellentesque tincidunt dictumst cras. Viverra risus pretium
-            habitasse netus nunc ex. Feugiat euismod elit nam rhoncus vestibulum
-            feugiat morbi hac vulputate. Viverra curae non nunc enim finibus
-            etiam. Ante primis augue ex vel sapien ultricies habitant senectus.
-            Tincidunt nascetur duis non diam himenaeos dignissim luctus.
-            Curabitur magnis potenti tortor consectetur sociosqu dictumst sem
-            aliquet.
+            hello! thanks for my stopping by <3 my name is maie, a long time hobby artist who enjoys creating illustrations and silly doodles. i have a fond love for drawing concept art and character dynamics through pairings! i take pride in always learning and improving day by day to become a better illustrator than i was before.
           </div>
           <div className="mt-[30px]" alt="social-media-icons">
             <div className="flex justify-center items-center text-3xl gap-x-5">
