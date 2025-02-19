@@ -15,7 +15,7 @@ function about() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center h-screen">
+      <div className="flex flex-col justify-center items-center min-h-screen flex-grow">
         <div className="flex justify-center items-center w-[130px] lg:w-[150px] ">
           <Link to="/">
             <img src={maieLogo} alt="" />
