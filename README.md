@@ -6,8 +6,6 @@
 ![Vercel](https://img.shields.io/badge/Vercel-%23000000?style=for-the-badge&logo=Vercel&logoColor=%23ffffff&color=%23000000)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-Art portifolio for artist [@masayaso](https://x.com/masayaso) on twitter. 
-
 ## Figma
 
 [Masayaso's Art Portfolio Website](https://www.figma.com/design/xAU0cVk1O4ujFwAlzk49fg/masayaso's-art-portfolio?node-id=0-1&t=KFMFWpH9oO3hqzeY-1)
