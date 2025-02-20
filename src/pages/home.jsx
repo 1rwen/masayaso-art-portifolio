@@ -10,7 +10,8 @@ import MaieBar1 from "../components/maiebar";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-function Home() {  useEffect(() => {
+function Home() {
+  useEffect(() => {
     window.scrollTo(0, 0); // Reset scroll to top when the component mounts
   }, []);
 

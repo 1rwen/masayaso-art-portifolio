@@ -10,8 +10,7 @@ import About from "./pages/About";
 import Personal from "./pages/personal";
 import Commissions from "./pages/commissions";
 import { motion, AnimatePresence } from "framer-motion";
-import { Analytics } from '@vercel/analytics/react';
-
+import { Analytics } from "@vercel/analytics/react";
 
 // PageWrapper Component
 const PageWrapper = ({ children }) => (
@@ -38,7 +37,7 @@ function App() {
   return (
     <div className="bg-babyBlue min-h-screen flex flex-col">
       <Router>
-        <div className="fixed w-full h-auto z-50">
+      <div className="fixed top-0 left-0 w-full h-16 max-w-full z-50">
           <Navbar />
         </div>
 

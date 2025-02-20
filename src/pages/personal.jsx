@@ -207,10 +207,7 @@ function personal() {
           </div>
         </div>
         <div className="text-royalBlue hover:text-royalBlue_hover flex justify-center text-xl mt-[50px] lg:mt-[100px]">
-          <Link
-            to="/"
-            className="text-royalBlue hover:text-royalBlue_hover"
-          >
+          <Link to="/" className="text-royalBlue hover:text-royalBlue_hover">
             <IoHomeSharp />
           </Link>
         </div>

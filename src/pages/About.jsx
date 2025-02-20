@@ -27,7 +27,11 @@ function about() {
             alt="about-description"
           >
             <span className="underline"> about </span> <br></br>
-            hello! thanks for my stopping by &lt;3 my name is maie, a long time hobby artist who enjoys creating illustrations and silly doodles. i have a fond love for drawing concept art and character dynamics through pairings! i take pride in always learning and improving day by day to become a better illustrator than i was before.
+            hello! thanks for my stopping by &lt;3 my name is maie, a long time
+            hobby artist who enjoys creating illustrations and silly doodles. i
+            have a fond love for drawing concept art and character dynamics
+            through pairings! i take pride in always learning and improving day
+            by day to become a better illustrator than i was before.
           </div>
           <div className="mt-[40px]" alt="social-media-icons">
             <div className="flex justify-center items-center text-3xl gap-x-5">
@@ -39,7 +43,7 @@ function about() {
                   className="text-royalBlue hover:text-royalBlue_hover"
                 >
                   <Link to="/">
-                   <IoHomeSharp />
+                    <IoHomeSharp />
                   </Link>
                 </a>
               </div>
@@ -65,7 +69,10 @@ function about() {
               </div>
             </div>
           </div>
-          <div alt="tag" className="text-royalBlue  flex justify-center text-xs mt-[50px] lg:mt-[50px]">
+          <div
+            alt="tag"
+            className="text-royalBlue  flex justify-center text-xs mt-[50px] lg:mt-[50px]"
+          >
             (#veryFirstLife)
           </div>
         </div>

@@ -1,18 +1,21 @@
 # Masayaso's art portifolio
+
 ![Vite](https://img.shields.io/badge/Vite-%23f712ff?style=for-the-badge&logo=Vite&logoColor=%23ffffff)
 ![React](https://img.shields.io/badge/React-%2300d1ff?style=for-the-badge&logo=React&logoColor=%23ffffff&color=%2300d1ff)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-%23000000?style=for-the-badge&logo=Vercel&logoColor=%23ffffff&color=%23000000)
 
-Art portifolio for artist [@masayaso](https://x.com/masayaso) on twitter. 
+Art portifolio for artist [@masayaso](https://x.com/masayaso) on twitter.
 
 ## React
+
 This project is built using React, a JavaScript library for building user interfaces. React is included and automatically installed when all project dependencies are installed.
 
 ## Vite
 
 This project is built using [Vite](https://vite.dev/), a modern JavaScript build tool optimized for development and production. Vite is included and automatically installed when all project dependencies are installed.
+
 ## Environment Variables
 
 The following environment variables are required and must be stored in an `.env` file:
@@ -20,6 +23,7 @@ The following environment variables are required and must be stored in an `.env`
 ```env
 N/A
 ```
+
 ## Commands
 
 ### Dependencies
@@ -57,5 +61,3 @@ npm run check
 ```bash
 npm run build
 ```
-
-
