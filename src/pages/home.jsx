@@ -33,7 +33,6 @@ function Home() {
         <div className="flex flex-wrap lg:flex-row h-auto items-center md:gap-y-5 justify-center space-y-[5%] md:space-y-[0%] md:gap-x-[3%] max-w-[1200px] w-[230px] sm:w-[300px] md:w-[700px]">
           <div className="md:w-[47%] lg:w-[30%]">
             <div className="underline text-xxs">personals</div>
-
             <Link to="/personal">
               <img src={personalPreviewSmall} alt="home-personal" />
             </Link>
