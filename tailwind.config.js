@@ -18,7 +18,7 @@ export default {
         md: "768px", // Medium devices (≥768px)
         lg: "1024px", // Large devices (≥1024px)
         xl: "1280px", // Extra large devices (≥1280px)
-        "2xl": '1400px',
+        "2xl": '2000px',
       },
     },
   },
