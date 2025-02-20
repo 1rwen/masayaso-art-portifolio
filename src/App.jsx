@@ -35,7 +35,7 @@ const PageWrapper = ({ children }) => (
 // Main App Component
 function App() {
   return (
-    <div className="bg-babyBlue min-h-screen flex flex-col">
+    <div className="bg-babyBlue min-h-screen flex flex-col overflow-visible">
       <Router>
         <div className="fixed top-0 left-0 w-screen h-16 z-50">
           <Navbar />
