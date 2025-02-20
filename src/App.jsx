@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="bg-babyBlue min-h-screen flex flex-col">
       <Router>
-      <div className="fixed top-0 left-0 w-full h-16 max-w-full z-50">
+      <div className="fixed top-0 left-0 w-full h-16 z-50 overflow-visible">
           <Navbar />
         </div>
 
