@@ -16,7 +16,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen w-screen overflow-hidden">
       <div
         className="min-h-screen flex flex-col xl:flex-row justify-center items-center lg:items-start lg:mt-[300px] lg:hidden"
         alt="container-main"
@@ -48,7 +48,7 @@ function Home() {
 
       <div className="lg:flex lg:flex-row justify-center mt-[65px] xl:mt-[75px] gap-x-4 w-screen h-auto hidden">
         <div className="w-[340px] xl:w-[430px] items-center">
-          <img src={personalPreview} alt="home-personal" class />
+          <img src={personalPreview} alt="home-personal" className="w-full" />
         </div>
 
         <div className="w-[30px]" alt="maribar">
